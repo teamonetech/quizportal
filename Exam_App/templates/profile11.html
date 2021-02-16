@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+{% extends "sidebar.html"%}
+{% block content %}
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" type="text/css" href="{%static 'fonts1/themify-icons/themify-icons.css' %}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css1/style.css' %}">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <h2>PROFILE FORM</h2>
+            <form method="POST" id="signup-form" action = "/profile_details/"class="signup-form">
+                    <h3>
+                        <span class="icon"><i class="ti-user"></i></span>
+                        <span class="title_text">Personal</span>
+                    </h3>
+                    <fieldset>
+                        <legend>
+                            <span class="step-heading">Personal Information: </span>
+                            <span class="step-number">Step 1 / 4</span>
+                        </legend>
+                        <div class="form-group">
+                            <label for="first_name" class="form-label required">First name</label>
+                            <input type="text" name="first_name" id="first_name" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last_name" class="form-label required">Last name</label>
+                            <input type="text" name="last_name" id="last_name" />
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-date">
+                                <label for="birth_date" class="form-label">Date of birth</label>
+                                <div class="form-date-group">
+                                    <div class="form-date-item">
+                                        <select id="birth_date" name="birth_date"></select>
+                                        <span class="select-icon"><i class="ti-angle-down"></i></span>
+                                    </div>
+                                    <div class="form-date-item">
+                                        <select id="birth_month" name="birth_month"></select>
+                                        <span class="select-icon"><i class="ti-angle-down"></i></span>
+                                    </div>
+                                    <div class="form-date-item">
+                                        <select id="birth_year" name="birth_year"></select>
+                                        <span class="select-icon"><i class="ti-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="form-select">
+                                <label for="gender" class="form-label">Gender</label>
+                                <div class="select-list">
+                                    <select name="gender" id="gender">
+                                        <option value="">Male</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label required">Email</label>
+                            <input type="text" name="email" id="email" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address" class="form-label required">Address</label>
+                            <input type="address" name="address" id="address" />
+                        </div>
+                    </fieldset>
+
+                    <h3>
+                        <span class="icon"><i class="ti-medall"></i></span>
+                        <span class="title_text">Education</span>
+                    </h3>
+                    <fieldset>
+                        <legend>
+                            <span class="step-heading">Education Information: </span>
+                            <span class="step-number">Step 2 / 4</span>
+                        </legend>
+                        <div class="form-group">
+                            <label for="SSC" class="form-label required">SSC</label>
+                            <input type="text" name="SSC" id="SSC" />
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label for="HSC" class="form-label required">HSC</label>
+                            <input type="text" name="HSC" id="HSC" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="graduation" class="form-label required">Graduation</label>
+                            <input type="text" name="graduation" id="graduation" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="post_graduation" class="form-label required">Post Graduation</label>
+                            <input type="post_" name="graduation" id="post_graduation" />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="certification" class="form-label required">Certification</label>
+                            <input type="text" name="certification" id="certification" />
+                        </div>
+                        <!--<div class="form-select">
+                            <label for="country" class="form-label">Country</label>
+                            <div class="select-list">
+                                <select name="country" id="country">
+                                    <option value="">Australia</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="USA">America</option>
+                                </select>
+                            </div>
+                        </div>-->
+                    </fieldset>
+
+                    <h3>
+                        <span class="icon"><i class="ti-star"></i></span>
+                        <span class="title_text">Employment</span>
+                    </h3>
+                    <fieldset>
+                        <legend>
+                            <span class="step-heading">Employment Information: </span>
+                            <span class="step-number">Step 3 / 4</span>
+                        </legend>
+                        <div class="form-group">
+                            <label for="company1" class="form-label required">Current Organization</label>
+                            <input type="text" name="company1" id="company1" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="designation" class="form-label required">Designation</label>
+                            <input type="text" name="designation" id="designation" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="working" class="form-label required">Working From</label>
+                            <input type="text" name="working" id="working" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="salary1" class="form-label required">Current Salary</label>
+                            <input type="text" name="salary1" id="salary1" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company2" class="form-label required">Previous Organization</label>
+                            <input type="text" name="company2" id="company2" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="salary2" class="form-label required">Last CTC</label>
+                            <input type="text" name="salary2" id="salary2" />
+                        </div>
+
+                        
+                    </fieldset>
+
+                    <h3>
+                        <span class="icon"><i class="ti-credit-card"></i></span>
+                        <span class="title_text">Other</span>
+                    </h3>
+                    <fieldset>
+                        <legend>
+                            <span class="step-heading">Other Informaltion: </span>
+                            <span class="step-number">Step 4 / 4</span>
+                        </legend>
+                        <div class="form-group">
+                            <label for="skills" class="form-label required">Key skills / IT skills</label>
+                            <input type="text" name="skills" id="skills" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Accomplishment" class="form-label required">Accomplishment</label>
+                            <input type="text" name="Accomplishment" id="Accomplishment" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Hobby" class="form-label required">Hobby</label>
+                            <input type="text" name="Hobby" id="Hobby" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="References" class="form-label required">References</label>
+                            <input type="text" name="References" id="References" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Languages" class="form-label required">Languages</label>
+                            <input type="text" name="Languages" id="Languages" />
+                        </div>
+
+                        <!--<div class="form-row">
+                            <div class="form-date">
+                                <label for="expiry_date" class="form-label">Expiry Date</label>
+                                <div class="form-date-group">
+                                    <div class="form-date-item">
+                                        <select id="expiry_date" name="expiry_date"></select>
+                                        <span class="select-icon"><i class="ti-angle-down"></i></span>
+                                    </div>
+                                    <div class="form-date-item">
+                                        <select id="expiry_month" name="expiry_month"></select>
+                                        <span class="select-icon"><i class="ti-angle-down"></i></span>
+                                    </div>
+                                    <div class="form-date-item">
+                                        <select id="expiry_year" name="expiry_year"></select>
+                                        <span class="select-icon"><i class="ti-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="form-select">
+                                <label for="payment_type" class="form-label">Payment type</label>
+                                <div class="select-list">
+                                    <select name="payment_type" id="payment_type">
+                                        <option value="">Master Card</option>
+                                        <option value="Master Card">Master Card</option>
+                                        <option value="Visa Card">Visa Card</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="card_number" class="form-label required">Card Number</label>
+                                <input type="number" name="card_number" id="card_number" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cvc" class="form-label required">CVC</label>
+                                <input type="text" name="cvc" id="cvc" />
+                            </div>
+                        </div>-->
+                    </fieldset>
+            </form>
+        </div>
+
+    </div>
+    <div class="footer">
+        
+    </div>
+
+    <!-- JS -->
+    <script src="{%static 'vendor1/jquery/jquery.min.js'%} "></script>
+    <script src="{%static 'vendor1/jquery-validation/dist/jquery.validate.min.js'%} "></script>
+    <script src="{%static 'vendor1/jquery-validation/dist/additional-methods.min.js'%} "></script>
+    <script src="{%static 'vendor1/jquery-steps/jquery.steps.min.js'%} "></script>
+    <script src="{%static 'vendor1/minimalist-picker/dobpicker.js' %}"></script>
+    <script src="{%static 'js1/main.js'%} "></script>
+</body>
+</html>
+{% endblock%}

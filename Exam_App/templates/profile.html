@@ -1,0 +1,472 @@
+<!doctype html>
+<html>
+    {%block content%}
+    <head>
+        <title></title>
+        <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-image: url("/static/images/exam1.png");
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 40px;
+        }
+        .Profile_Form{
+            width: 800px;
+            background-color: rgb(0,0,0,0.6);
+            margin:auto;
+            color: #ffffff;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius:15px 15px 0px 0px;
+        }
+        .main{
+            background-color: rgb(0,0,0,0.5);
+            width: 800px;
+            margin:auto;
+        }
+            form{
+                padding: 10px;
+            }
+         .form-space{
+            width: 100%;
+            height: 10px;
+        }
+            .label{
+                position: relative;
+                top: 20px;
+                margin-left: 25px;
+                margin-top: 30px;
+                width: 125px;
+                color: white;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .HSC,.SSC{
+                position: relative;
+                left: 164px;
+                top: 20px;
+                width: 360px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .marks1,.marks2{
+                position: relative;
+                left: 168px;
+                top: 20px;
+                width: 64px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .graduation{
+                position: relative;
+                left: 104px;
+                top: 20px;
+                width: 360px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .marks3{
+                position: relative;
+                left: 108px;
+                top: 20px;
+                width: 64px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .post_graduation{
+                position: relative;
+                left: 62px;
+                top: 20px;
+                width: 360px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .marks4{
+                position: relative;
+                left: 66px;
+                top: 20px;
+                width: 64px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .certification{
+                position: relative;
+                left: 92px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .company1{
+                position: relative;
+                left: 20px;
+                top: 20px;
+                width: 480px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .company2{
+                position: relative;
+                left: 10px;
+                top: 20px;
+                width: 480px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .designation{
+                position: relative;
+                left: 96px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+
+            .box1,.box2{
+                position: relative;
+                left: 130px;
+                top: 20px;
+                width: 202px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            
+            .Salary1,.Salary2{
+                position: relative;
+                left: 76px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .Salary2{
+                position: relative;
+                left: 122px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .skills{
+                position: relative;
+                left: 34px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+
+            .Accomplishment{
+                position: relative;
+                left: 56px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .Hobby{
+                position: relative;
+                left: 144px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .References{
+                position: relative;
+                left: 104px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .email{
+                position: relative;
+                left: 152px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .DOB{
+                position: relative;
+                left: 92px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .gender{
+                position: relative;
+                left: 138px;
+                top: 20px;
+                width: 534px ;
+                height: 40px;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+                outline:none;
+            }
+            .address{
+                position: relative;
+                left: 128px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .Languages{
+                position: relative;
+                left: 38px;
+                top: 20px;
+                width: 484px ;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            
+            .form-button1{
+                position: relative;
+                left: 300px;
+                top: 20px;
+                width: 200px ;
+                color: royalblue;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+            .form-button2{
+                position: relative;
+                left: 400px;
+                top: 20px;
+                width: 80px ;
+                color: seagreen;
+                line-height:40px;
+                border-radius: 6px;
+                padding: 0px 22px;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="Profile_Form">
+            <h1>Profile Form</h1>
+        </div>
+        <div class="main">
+            <section class="Profile"></section>
+            <form method="POST" class="Profile-form" id="Profile-form">
+                {% csrf_token %}
+                 <!--Education Details-->
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2>
+               
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2>
+                <label class="label">EDUCATION :</label>
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2><hr/>
+                
+                <div id="SSC">
+                    <h2 class="form-space"></h2>
+                    <label class="label">SSC</label>
+                    <input class="SSC" type="text" name="SSC"  placeholder="Enter Institute Name"> 
+                    <input class="marks2" type="text" name="marks2"  placeholder="%">         
+                </div>
+                <div id="HSC">
+                    <h2 class="form-space"></h2>
+                    <label class="label">HSC</label>
+                    <input class="HSC" type="text" name="HSC"  placeholder="Enter Institute Name">
+                    <input class="marks1" type="text" name="marks1"  placeholder="%">          
+                </div>
+                <div id="graduation">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Graduation</label>
+                    <input class="graduation" type="text" name="graduation"  placeholder="Enter Institute Name"> 
+                    <input class="marks3" type="text" name="marks3"  placeholder="%">         
+                </div>
+                <div id="post_graduation">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Post Graduation</label>
+                    <input class="post_graduation" type="text" name="post_graduation"  placeholder="Enter Institute Name"> 
+                    <input class="marks4" type="text" name="marks4"  placeholder="%">         
+                </div>
+                <div id="certification">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Certification </label>
+                    <input class="certification" type="text" name="certification"  placeholder="Enter Extra Certification">          
+                </div>
+
+        <!--Employment-->
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2>
+                <label class="label">EMPLOYMENT :</label>
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2><hr/>
+
+                <div id="company1">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Current Organization</label>
+                    <input class="company1" type="text" name="company1"  placeholder="Enter Company Name">          
+                </div>
+                <div id="designation">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Designation</label>
+                    <input class="designation" type="text" name="designation"  placeholder="Enter designation">          
+                </div>
+                <div id="Working from">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Working </label>
+                    <input class="box1" type="text" name="box1"  placeholder="from">    
+                    <label class="label"></label>  
+                    <input class="box2" type="text" name="box2"  placeholder="till">   
+                </div>
+                <div id="Salary1">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Current Salary</label>
+                    <input class="Salary1" type="text" name="Salary1"  placeholder="Enter Salary">        
+                </div>
+                <div id="company2">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Previous Organization</label>
+                    <input class="company2" type="text" name="company2"  placeholder="Enter Company Name">          
+                </div>
+                <div id="Salary2">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Last CTC</label>
+                    <input class="Salary2" type="text" name="Salary2"  placeholder="Enter Salary">        
+                </div>
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2><hr/>
+`       <!--KEY SKILLS/ IT SKILLS :-->
+                <div id="skills">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Key Skills / IT Skills</label>
+                    <input class="skills" type="text" name="skills"  placeholder="Enter Key Skills /IT Skills">          
+                </div>
+        <!--Accompolishment :-->
+                <div id="Accomplishment">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Accomplishment</label>
+                    <input class="Accomplishment" type="text" name="Accomplishment"  placeholder="Enter Accomplishment">  
+                </div>
+        <!--Hobby :-->
+                <div id="Hobby">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Hobby</label>
+                    <input class="Hobby" type="text" name="Hobby"  placeholder="Enter Hobby">          
+                </div>
+        <!--References :-->
+                <div id="References">
+                    <h2 class="form-space"></h2>
+                    <label class="label">References</label>
+                    <input class="References" type="text" name="References"  placeholder="Enter References Name">          
+                </div>
+        <!--Personal Details-->
+
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2>
+                <label class="label">Personal Details :</label>
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2><hr/>
+
+                <div id="email">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Email</label>
+                    <input class="email" type="text" name="email"  placeholder="Enter email" required/>      
+                </div>
+                <div id="DOB">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Date Of Birth</label>
+                    <input class="DOB" type="date" name="DOB"  placeholder="DD / MM / YY">      
+                </div>
+
+                <div id="gender">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Gender</label>
+                    <select class="gender" name="gender">
+                        <option disabled="disabled" selected="selected">--choose option--</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>            
+                </div>
+                
+                <div id="address">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Address </label>
+                    <input class="address" type="text" name="address"  placeholder="Enter Address">          
+                </div>
+
+                <div id="Languages">
+                    <h2 class="form-space"></h2>
+                    <label class="label">Languages Known</label>
+                    <input class="Languages" type="text" name="Languages"  placeholder="Enter Languages">          
+                </div>
+
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2>
+                
+                <div class="form-group ">
+                    <input class="form-button1" type="submit" name="Profile" id="Profile"  value="Upload Resume"/>
+                    <input class="form-button2" type="submit" name="Profile" id="Profile"  value="ADD"/>
+                    
+                </div>
+                <h2 class="form-space"></h2>
+                <h2 class="form-space"></h2>
+            </form>
+            </section>
+        </div>
+    </body>
+    {% endblock%}
+</html>
+

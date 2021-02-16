@@ -1,0 +1,15 @@
+<html>
+<body>
+
+{% for sub in subjects %} 
+        <div class="col-3">
+	        <div class="jumbotron">
+    	        <h1> {{sub.ctype}}</h1>
+                <p class="lead">No of Questions : 30 </p>
+                <p class="lead">Marks : 1/1 </p>
+                <p><a href="#" target="_blank" class="btn btn-success btn-lg">Get started</a></p>
+                <!--target="_blank" >>open new tab-->
+    	    </div>
+{% endfor %}
+</body>
+</html>

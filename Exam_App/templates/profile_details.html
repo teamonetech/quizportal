@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com    @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <title>profile with data and skills - Bootdey.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    	body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #e2e8f0;    
+}
+.main-body {
+    padding: 15px;
+}
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="main-body">
+    
+          <!-- Breadcrumb -->
+          <nav aria-label="breadcrumb" class="main-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Profile Details</a></li>
+              
+            </ol>
+          </nav>
+          <!-- /Breadcrumb -->
+    
+          <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center text-center">
+                  
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                    <!--<img src="{{img}}" alt="Admin" class="rounded-circle" width="150">-->
+
+                    <div class="mt-3">
+                      <h4>{{request.session.name}}</h4>
+                      <a href="/profile" class="btn btn-primary ">Edit</a>
+                      <a href="/userhome" class="btn btn-outline-primary">Close</a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h6 class="mb-0">Personal Details :</h6>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h6 class="mb-0">Email</h6>
+                        </div>
+                        <div class="col-sm-8 text-secondary">
+                            {{email}}
+                        </div>    
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h6 class="mb-0">Phone</h6>
+                        </div>
+                        <div class="col-sm-8 text-secondary">
+                            {{phone}}
+                        </div>    
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h6 class="mb-0">Date of Birth</h6>
+                        </div>
+                        <div class="col-sm-8 text-secondary">
+                            {{DOB}}
+                        </div>    
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h6 class="mb-0">Gender</h6>
+                        </div>
+                        <div class="col-sm-8 text-secondary">
+                            {{gender}}
+                        </div>    
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h6 class="mb-0">Address</h6>
+                        </div>
+                        <div class="col-sm-8 text-secondary">
+                            {{address}}
+                        </div>    
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h6 class="mb-0">Languages</h6>
+                        </div>
+                        <div class="col-sm-8 text-secondary">
+                            {{Languages}}
+                        </div>    
+                    </div>
+                    <hr>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Name</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{request.session.name}}
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Educational Details :</h6>
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">SSC</h6>
+                    </div>
+                    <div class="col-sm-4 text-secondary">
+                      {{SSC}}
+                    </div>
+                    <div class="col-sm-4 text-secondary">
+                      {{marks2}}%
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">HSC</h6>
+                    </div>
+                    <div class="col-sm-4 text-secondary">
+                      {{HSC}}
+                    </div>
+                    <div class="col-sm-4 text-secondary">
+                      {{marks1}}%
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Graduation</h6>
+                    </div>
+                    <div class="col-sm-4 text-secondary">
+                      {{graduation}}
+                    </div>
+                    <div class="col-sm-4 text-secondary">
+                      {{marks3}}%
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Post Graduation</h6>
+                    </div>
+                    <div class="col-sm-4 text-secondary">
+                      {{post_graduation}}
+                    </div>
+                    <div class="col-sm-4 text-secondary">
+                      {{marks4}}%
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Certification</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{certification}}
+                    </div>    
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Department</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{college}}
+                    </div>    
+                  </div>
+                  <hr>
+                  
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Employment Details :</h6>
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Current Organization</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{company1}}
+                    </div>    
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Designation</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{designation}}
+                    </div>    
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Working from</h6>
+                    </div>
+                    <div class="col-sm-4 text-secondary">
+                      {{box1}}
+                    </div>    
+                    <div class="col-sm-4 text-secondary">
+                      {{box2}}
+                    </div> 
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Current Salary</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{Salary1}}
+                    </div>    
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Previous Organization</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{company2}}
+                    </div>    
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Last CTC</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{Salary2}}
+                    </div>    
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Key Skills / IT Skills</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{skills}}
+                    </div>    
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Accompolishment</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{Accompolishment}}
+                    </div>    
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">Hobby</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{Hobby}}
+                    </div>    
+                  </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6 class="mb-0">References</h6>
+                    </div>
+                    <div class="col-sm-8 text-secondary">
+                      {{References}}
+                    </div>    
+                  </div>
+                  <hr>
+
+                  
+
+                  
+                  
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>

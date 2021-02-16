@@ -1,0 +1,72 @@
+{%extends "index.html"%}
+{% load static %}
+{%block content%}
+
+
+<div class="container-fluid" style="text-align: center;" >
+
+<!--<div class="row">
+    <div class="col-12">
+        <h1 style="text-align: center;color: black;margin-top: 80px;" >Welcome {{user.name}}
+        <a href="/profile" class="btn btn-primary ">Edit Profile</a></h1><a href="/profile" class="btn btn-primary ">Edit Profile</a></h1>
+        <h3 style="text-align: left;margin-top: 30px;" ><strong>INSTRUCTIONS</strong></h3>
+        <h5 style="text-align: left;margin-top: 20px;" > &#8226; There are total 20 questions (10 Aptitute + 10 Technical)</h5>
+        <h5 style="text-align: left;" > &#8226; Each question carries <strong style="color: blue;">Two</strong> marks. No negative marking for wrong answers</h5>
+        <h5 style="text-align: left;" > &#8226; Questions are of Multiple Choice </h5>
+        <h5 style="text-align: left;" > &#8226; You Need <strong style='color: blue'>Minimum 20 Marks</strong> to Pass this Test</h5>
+        <h5 style="text-align: center;margin-top: 20px;" >BEST OF LUCK!!</h5>
+    </div>
+    <a href="" class="btn btn-success" style="margin-top: 20px;text-align: center;" 
+                    id = 'startTest1' onclick="redirectToTest1()">Start Quiz</a>
+</div>-->
+
+<div class="row">
+    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+        <h4 style="text-align: center;color: black;margin-top: 80px; ">Welcome {{user.name}}</h4>
+        <a href="/profile" class="btn btn-primary ">My Profile</a></h1>
+    </div>
+
+    <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+        <div class="row" style="text-align: center;margin-top: 100px;">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+	            <div class="jumbotron">
+    	            <h2>test</h2>
+                    <p class="lead">No of Questions : 20 </p>
+                    <p class="lead">Marks : 2/1 </p>
+                    <a href="/instructions1/" class="btn btn-success" style="margin-top: 20px;text-align: center;" >Start Quiz</a>      
+    	        </div>    
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+	            <div class="jumbotron">
+    	            <h2>Firewall</h2>
+                    <p class="lead">No of Questions : 20 </p>
+                    <p class="lead">Marks : 2/1 </p>
+                    <a href="/instructions2/" class="btn btn-success" style="margin-top: 20px;text-align: center;" >Start Quiz</a>      
+                    
+    	        </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+</div>
+
+<!--<script>
+    function redirectToTest(){    
+        localStorage.removeItem('timer');
+        var a = document.getElementById('startTest'); 
+        a.href = "/quizquestions/"; 
+    }
+</script>
+
+<script>
+    function redirectToTest1(){    
+        localStorage.removeItem('timer');
+        var a = document.getElementById('startTest1'); 
+        a.href = "/quizquestions1/"; 
+    }
+
+</script>-->
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "index.html"%}
+{% block content %}
+<body>
+<div class="container-fluid" style="text-align: center;" >
+
+<div class="row">
+    <div class="col-12">
+        <h1 style="text-align: center;color: black;margin-top: 80px;" >Welcome {{user.name}}
+        
+        <h3 style="text-align: left;margin-top: 30px;" ><strong>INSTRUCTIONS</strong></h3>
+        <h5 style="text-align: left;margin-top: 20px;" > &#8226; There are total 20 questions (10 Aptitute + 10 Technical)</h5>
+        <h5 style="text-align: left;" > &#8226; Each question carries <strong style="color: blue;">Two</strong> marks. No negative marking for wrong answers</h5>
+        <h5 style="text-align: left;" > &#8226; Questions are of Multiple Choice </h5>
+        <h5 style="text-align: left;" > &#8226; You Need <strong style='color: blue'>Minimum 20 Marks</strong> to Pass this Test</h5>
+        <h5 style="text-align: center;margin-top: 20px;" >BEST OF LUCK!!</h5>
+        <a href="" class="btn btn-success" style="margin-top: 20px;text-align: center;" 
+        id = 'startTest' onclick="redirectToTest()">Start Quiz</a>
+    </div>
+    
+</div>
+</div>
+</body>
+
+<script>
+    function redirectToTest(){    
+        localStorage.removeItem('timer');
+        var a = document.getElementById('startTest'); 
+        a.href = "/quizquestions/"; 
+    }
+</script>
+{% endblock %}
